@@ -6,7 +6,7 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
-const name = defaultSettings.title || '图书管理系统' // 标题
+const name = defaultSettings.title || '设备管理系统' // 标题
 
 const port = process.env.port || process.env.npm_config_port || 80 // 端口
 
@@ -33,6 +33,7 @@ module.exports = {
     proxy: {
       // detail: https://cli.vuejs.org/config/#devserver-proxy
       [process.env.VUE_APP_BASE_API]: {
+        // target: `https://chengym.info/library`,
         target: `http://localhost:8080/library`,
         changeOrigin: true,
         pathRewrite: {

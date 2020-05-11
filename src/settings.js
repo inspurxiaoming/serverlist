@@ -1,5 +1,5 @@
 module.exports = {
-  title: '图书管理系统',
+  title: '设备管理系统',
 
   /**
    * 是否系统布局配置

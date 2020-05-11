@@ -26,7 +26,7 @@ export default {
   },
   data() {
     return {
-      title: '图书管理系统',
+      title: '设备管理系统',
       logo: logoImg
     }
   }

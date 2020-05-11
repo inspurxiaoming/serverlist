@@ -74,6 +74,17 @@ export function selectDictLabel(datas, value) {
 	})
 	return actions.join('');
 }
+// 回显云中心字典
+export function selectCloudCneterLabel(datas, value) {
+  var actions = [];
+  Object.keys(datas).map((key) => {
+    if (datas[key].deptId == ('' + value)) {
+      actions.push(datas[key].deptName);
+      return false;
+    }
+  })
+  return actions.join('');
+}
 
 // 通用下载方法
 export function download(fileName) {
@@ -129,4 +140,3 @@ export function handleTree(data, id, parentId, children, rootId) {
 	});
 	return treeData != '' ? treeData : data;
   }
-  
