@@ -34,7 +34,8 @@ module.exports = {
       // detail: https://cli.vuejs.org/config/#devserver-proxy
       [process.env.VUE_APP_BASE_API]: {
         // target: `https://chengym.info/library`,
-        target: `http://localhost:8080/library`,
+        // target: `http://localhost:8080/library`,
+        target: `http://192.168.0.122:8080/library`,
         changeOrigin: true,
         pathRewrite: {
           ['^' + process.env.VUE_APP_BASE_API]: ''
